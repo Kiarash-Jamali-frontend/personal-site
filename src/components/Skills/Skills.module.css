@@ -1,0 +1,42 @@
+/*Container*/
+.SkillsBox {
+    padding: 2rem 4rem;
+    box-shadow: 4px 4px 7px rgba(94, 94, 94, 0.288), inset 2px 2px 5px rgba(136, 136, 136, 0.308);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Label*/
+.SkillsBox h5 {
+    font-size: 2em;
+    font-family: BebasNeue;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #28b3cc;
+    text-align: center;
+    padding: 0 1rem .5rem 1rem;
+    border-bottom: 3px solid #28b3cc;
+    margin: 0;
+}
+
+/*Skill value*/
+.SkillValue {
+    height: 8px;
+    border-radius: 2px;
+    position: relative;
+    background: #1e373b;
+}
+
+.SkillValue > div {
+    background: #98cdd6a1;
+    position: absolute;
+    height: 100%;
+    border-radius: 2px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}

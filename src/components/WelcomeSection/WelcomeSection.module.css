@@ -1,0 +1,90 @@
+/*Container*/
+.WelcomeSection {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.WelcomeSection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: 1;
+}
+
+.WelcomeSection div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+/*Texts*/
+.WelcomeSection h1 {
+    font-size: 5em;
+}
+
+.WelcomeSection h1,
+.WelcomeSection h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: BebasNeue;
+    text-shadow: 0 0 10px rgb(36, 36, 36);
+}
+
+.WelcomeSection h1 span {
+    font-family: BebasNeue !important;
+}
+
+/*Profile image*/
+.profile {
+    clip-path: circle();
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Social media buttons*/
+.SocialMediaButtons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 4px 4px 7px rgba(63, 63, 63, 0.288), inset 2px 2px 5px rgba(68, 68, 68, 0.308);
+    border-radius: 4px;
+    transition: 200ms all ease-in;
+    padding: 8px 12px;
+    background: #EEF1FF;
+    text-decoration: none;
+    color: #000;
+}
+
+.SocialMediaButtons a:hover {
+    box-shadow: 0px 0px 2px rgba(68, 68, 68, 0.308), inset -2px -2px 5px rgba(68, 68, 68, 0.308);
+}
+
+.SocialMediaButtons a i {
+    margin-right: 5px;
+    color: #000;
+}
+
+@media screen and (max-width: 1200px){
+    .WelcomeSection h1 {
+        font-size: 2.35em !important;
+    }
+}
+

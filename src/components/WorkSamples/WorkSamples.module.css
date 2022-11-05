@@ -1,0 +1,95 @@
+/*Container*/
+.WorkSamples {
+    padding: 2rem 4rem;
+    box-shadow: 4px 4px 7px rgba(94, 94, 94, 0.288), inset 2px 2px 5px rgba(136, 136, 136, 0.308);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Label*/
+.WorkSamples h5.Label {
+    font-size: 2em;
+    font-family: BebasNeue;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #28b3cc;
+    text-align: center;
+    padding: 0 1rem .5rem 1rem;
+    border-bottom: 3px solid #28b3cc;
+    margin: 0;
+}
+
+/*Item*/
+.workSamplesItem {
+    height: 100%;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 4px 4px 7px rgba(94, 94, 94, 0.288), inset 2px 2px 5px rgba(136, 136, 136, 0.308);
+}
+
+.workSamplesItem > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    border-radius: 5px;
+    justify-content: center;
+    position: absolute;
+    transition: 700ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.workSamplesItem > div > div {
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 5px;
+    background: #28b3cc;
+    text-decoration: none;
+    color: #000;
+}
+
+.workSamplesItem::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 900ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+    background: rgba(0, 0, 0, 0.79);
+}
+
+.workSamplesItem:hover div {
+    opacity: 1;
+}
+
+.workSamplesItem:hover::before {
+    opacity: 1;
+}
+
+.workSamplesItem div div i {
+    color: #000;
+}
+
+.workSamplesItem img {
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.workSamplesItem h5 {
+    font-size: 2em;
+    font-family: BebasNeue;
+    color: #fff;
+    text-align: center;
+}

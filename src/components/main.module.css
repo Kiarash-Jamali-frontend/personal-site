@@ -1,0 +1,14 @@
+/*Define website font*/
+@font-face {
+    font-family: "BebasNeue";
+    src: url("./Fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: Calibri;
+}
+
+.mainContainer {
+    height: 100%;
+    background: #EEF1FF;
+}
